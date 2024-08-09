@@ -13,24 +13,24 @@ function Footer() {
     <footer className="bg-[#252525] text-[#ebebeb] py-[3.38rem] px-[4rem] relative">
       <div className="flex flex-col space-y-4 lg:space-x-[25%] lg:space-y-0   lg:flex-row ">
         <div className="flex space-x-24 max-[500px]:flex-col max-[500px]:space-x-0 max-[500px]:space-y-4 lg:space-x-[25%]">
-          <Link to={"/"} className="uppercase  font-bold">
+          <Link to={"/Loukman-store/"} className="uppercase  font-bold">
             LoukmanStore
           </Link>
           <div className="flex space-x-4">
             <Link
-              to={"/products/category/jewelery"}
+              to={"/Loukman-store/products/category/jewelery"}
               className="opacity-70 hover:opacity-100 transition-all ease-in duration-300 hover:text-white"
             >
               Categories
             </Link>
             <Link
-              to={"/about"}
+              to={"/Loukman-store/about"}
               className="opacity-70 hover:opacity-100 transition-all ease-in duration-300 hover:text-white"
             >
               About
             </Link>
             <Link
-              to={"/contact"}
+              to={"/Loukman-store/contact"}
               className="opacity-70 hover:opacity-100 transition-all ease-in duration-300 hover:text-white"
             >
               Contact
@@ -117,7 +117,7 @@ function Footer() {
         <p>
           Coded by{" "}
           <Link
-            to={"https://www.github.com/nathan-somto"}
+            to={"https://www.github.com/"}
             className="mx-2 text-slate-900 font-semibold"
           >
             loukman dareusey

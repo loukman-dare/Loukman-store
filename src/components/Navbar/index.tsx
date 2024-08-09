@@ -36,7 +36,7 @@ function Navbar() {
       className="flex w-full font-medium bg-[#fff] text-[#141414] flex-col lg:flex-row  h-[5rem] divide-y lg:divide-y-0 border-b fixed top-0 z-[100] lg:pl-[3.5rem] lg:items-center"
     >
       <div className="lg:mr-[5%] h-[2.5rem] justify-between flex items-center pl-[1.5rem] lg:pl-0 lg:h-[5rem]">
-        <Link to={"/"} className="uppercase  font-bold">
+        <Link to={"/Loukman-store"} className="uppercase  font-bold">
           LoukmanStore
         </Link>
         <div
@@ -83,25 +83,25 @@ function Navbar() {
            lg:divide-x lg:px-3  lg:h-[3.5rem] left-[-2rem] 
            border border-solid border-[#ebebeb]`}
           >
-            <Link to={"/products/category/jewelery"} className="dropdown-text">
+            <Link to={"/Loukman-store/products/category/jewelery"} className="dropdown-text">
               jewelery
             </Link>
             <Link
-              to={"/products/category/men's clothing"}
+              to={"/Loukman-store/products/category/men's clothing"}
               className="dropdown-text"
             >
               men's clothing
             </Link>
             <Link
-              to={"/products/category/women's clothing"}
+              to={"/Loukman-store/products/category/women's clothing"}
               className="dropdown-text"
             >
               women's clothing
             </Link>
           </div>
         </div>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/Loukman-store/about"}>About</Link>
+        <Link to={"/Loukman-store/contact"}>Contact</Link>
         <div
           className={`fixed min-h-screen w-2/4 md:w-[70%] left-0 top-0 z-[101] backdrop-blur-[6px] lg:hidden ${
             toggleMobileNav ? "flex" : "hidden"

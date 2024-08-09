@@ -84,7 +84,7 @@ function ProductDetails() {
                 {productData.title}
               </h1>
               <Link
-                to={`/products/category/${productData.category}`}
+                to={`/Loukman-store/products/category/${productData.category}`}
                 className=" opacity-70 font-medium capitalize mb-3 text-gray-500"
               >
                 {productData.category}

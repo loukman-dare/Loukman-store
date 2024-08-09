@@ -65,7 +65,7 @@ function Checkout() {
         callback: (response) => {
           console.log(response.transaction_id);
           closePaymentModal();
-          Navigate("/success");
+          Navigate("/Loukman-store/success");
         },
         onClose: () => {
           console.log('closed')
@@ -92,7 +92,7 @@ function Checkout() {
   ];
   useEffect(() => {
     if (cartItems.length === 0) {
-      Navigate("/");
+      Navigate("/Loukman-store/");
     }
   }, [Navigate, cartItems]);
   return (

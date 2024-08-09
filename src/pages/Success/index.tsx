@@ -37,7 +37,7 @@ function Success() {
         </h1>
         <p className="text-gray-700 text-[1.05rem]">we hope to see you soon.</p>
         <Link
-          to="/"
+          to="/Loukman-store/"
           className="block cart-btn sm:w-[60%] min-w-[200px] py-4 mx-auto max-w-[350px]"
         >
           Continue Your Shopping

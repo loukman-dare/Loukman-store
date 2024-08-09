@@ -17,17 +17,20 @@ type Images<T extends CategoryType> = {
 function Category() {
   const { categoryname } = useParams();
   const { data, loading, error } = useAxios<Product[]>(
-    `/products/category/${categoryname}`
+    `/Loukman-store/products/category/${categoryname}`
   );
   const [localData, setLocalData] = useState<Product[] | null>(null);
   const [filter, setFilter] = useState([]);
   useEffect(() => {
     window.scrollTo(0, 0);
-    setLocalData(data);
+    if (data) {
+      setLocalData(data);
+    }
     return () => {
-      console.log('un mounted')
+      console.log('un mounted');
     };
   }, [data]);
+  
   if (error) return <Notfound />;
   const images: Images<CategoryType> = {
     jewelery: accessories,
@@ -54,10 +57,9 @@ function Category() {
           <CategoryCenter
             data={filter.length > 0 ? filter : localData}
             loading={loading}
-            setFilter={
-              setFilter as React.Dispatch<React.SetStateAction<Product[]>>
-            }
+            setFilter={setFilter as React.Dispatch<React.SetStateAction<Product[]>>}
           />
+
         </main>
       </>
     </>

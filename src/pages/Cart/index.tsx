@@ -125,7 +125,7 @@ function Checkout() {
                 <p>Sub Total</p>
                 <p className="opacity-60">${priceTotal}</p>
               </div>
-              <button onClick={()=> navigate('/checkout')} className="bg-[#242424] text-white py-2 px-8 rounded-[6px] w-full">
+              <button onClick={()=> navigate('/Loukman-store/checkout')} className="bg-[#242424] text-white py-2 px-8 rounded-[6px] w-full">
                 Proceed to checkout
               </button>
             </div>
@@ -140,7 +140,7 @@ function Checkout() {
           </div>
           <button
             className="bg-[#242424] text-white py-2 px-8 rounded-[6px] w-[60%] mx-auto block"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/Loukman-store/")}
           >
             Go back to Shopping
           </button>

@@ -44,7 +44,7 @@ function Banner() {
             <div className="absolute space-y-3 text-left left-[10%] lg:space-y-7 top-[30%] ">
               <h3 className="lg:text-3xl opacity-70 ">{item.heading1}</h3>
               <h1 className="lg:text-[55px] ">{item.para}</h1>
-              <button onClick={() =>navigate(`/category/${item.link}`)} className="py-2 px-10 font-semibold bg-[#2206fb] rounded-[24px] text-[#fff] hover:bg-[#272726] transition-all duration-300 ease-in ">
+              <button onClick={() =>navigate(`/Loukman-store/products/category/${item.link}`)} className="py-2 px-10 font-semibold bg-[#2206fb] rounded-[24px] text-[#fff] hover:bg-[#272726] transition-all duration-300 ease-in ">
                 Shop now
               </button>
             </div>

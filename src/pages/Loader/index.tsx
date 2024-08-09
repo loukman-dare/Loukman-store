@@ -50,9 +50,9 @@ function Loader() {
     }),
   };
   useEffect(() => {
-    setTimeout(() => navigate("/home"), 3000);
+    setTimeout(() => navigate("/Loukman-store/home"), 3000);
   }, [navigate]);
-  const text = "SM STORE";
+  const text = "LOUKMAN STORE";
   return (
     <motion.main
       className="h-screen fixed top-0 z-[999999] bg-white left-0 w-full flex flex-col items-center justify-center space-y-8"

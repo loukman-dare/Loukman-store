@@ -6,17 +6,17 @@ function CategoryLinks() {
     {
       heading: "Men",
       imgUrl: men,
-      url: "/products/category/men's clothing",
+      url: "/Loukman-store/products/category/men's clothing",
     },
     {
       heading: "Women",
       imgUrl: women,
-      url: "/products/category/women's clothing",
+      url: "/Loukman-store/products/category/women's clothing",
     },
     {
       heading: "Accessory",
       imgUrl: accessory,
-      url: "/products/category/jewelery",
+      url: "/Loukman-store/products/category/jewelery",
     },
   ];
   return (

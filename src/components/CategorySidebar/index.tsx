@@ -19,7 +19,7 @@ function CategorySidebar() {
         <div className="flex space-y-4 flex-col">
           {categories.map((category, index) => (
             <Link
-              to={`/products/category/${category}`}
+              to={`/Loukman-store/products/category/${category}`}
               key={index}
               className={`${
                 category === categoryname

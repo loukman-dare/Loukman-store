@@ -30,15 +30,15 @@ function Pages() {
   {location.pathname!== '/' && <Navbar/>}  
     <AnimatePresence mode='wait'>
       <Routes key={location.pathname} location={location}>
-          <Route path='/' element={<Loader/>}/>
-          <Route path='home' element={<Home/>} />
-          <Route path='products/:id' element={<ProductDetails/>}/>
-          <Route path='products/category/:categoryname' element={<Category/>}/>
-          <Route path='cart' element={<Cart/>}/>
-          <Route path='contact' element={<Contact/>}/>
-          <Route path='checkout' element={<Checkout/>}/>
-          <Route path="about" element={<About/>}/>
-          <Route path='success' element={<Success/>}/>
+          <Route path='/Loukman-store' element={<Loader/>}/>
+          <Route path='Loukman-store/home' element={<Home/>} />
+          <Route path='Loukman-store/products/:id' element={<ProductDetails/>}/>
+          <Route path='Loukman-store/products/category/:categoryname' element={<Category/>}/>
+          <Route path='Loukman-store/cart' element={<Cart/>}/>
+          <Route path='Loukman-store/contact' element={<Contact/>}/>
+          <Route path='Loukman-store/checkout' element={<Checkout/>}/>
+          <Route path="Loukman-store/about" element={<About/>}/>
+          <Route path='Loukman-store/success' element={<Success/>}/>
           <Route path='*' element={<Notfound/>}/>
       </Routes>
       </AnimatePresence>

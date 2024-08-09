@@ -64,7 +64,7 @@ function CartMenu({
                   exit={{ scale: 0.5, x: "100vh" }}
                   className="flex space-x-4 h-[100px] items-center space-y-3"
                 >
-                  <Link to={`/products/${cartItem.id}`}>
+                  <Link to={`/Loukman-store/products/${cartItem.id}`}>
                     <img
                       src={cartItem.image}
                       alt={cartItem.title.slice(0, 25) + " poster"}
@@ -91,14 +91,14 @@ function CartMenu({
         </div>
         <div className="flex space-x-6 items-center ">
           <Link
-            to={"/cart"}
+            to={"/Loukman-store/cart"}
             onClick={() => setOpenMenu((prevState) => !prevState)}
             className="px-6 py-2 bg-[#1b1b1b] hover:bg-[#2206fb] transition-all ease-in duration-300 text-white rounded-[18px]"
           >
             VIEW CART
           </Link>
           <Link
-            to={"/checkout"}
+            to={"/Loukman-store/checkout"}
             className="px-6 py-2 bg-[#1b1b1b] hover:bg-[#2206fb] transition-all ease-in duration-300 text-white rounded-[18px]"
           >
             CHECK OUT

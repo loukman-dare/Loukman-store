@@ -40,7 +40,7 @@ function ProductCard({
       <div className="group-hover:opacity-100 opacity-0 text-[#b183b1bb] bg-[#e4e4e4] absolute p-2 top-[50px] right-[5px]">
         <AiOutlineHeart />
       </div>
-      <Link to={`/products/${id}`} className=" h-[250px] block md:h-[300px] w-full">
+      <Link to={`/Loukman-store/products/${id}`} className=" h-[250px] block md:h-[300px] w-full">
         <img
           src={image}
           alt={`${title} product poster`}
@@ -58,7 +58,7 @@ function ProductCard({
       <div className="flex space-x-3 bottom-[-10px] absolute z-[10] h-[80px]  font-bold text-[0.85rem]">
         <div>
           <Link
-            to={`/products/category/${category}`}
+            to={`/Loukman-store/products/category/${category}`}
             className=" capitalize font-medium text-[0.85rem] opacity-70"
           >
             {category}
