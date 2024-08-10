@@ -17,7 +17,7 @@ type Images<T extends CategoryType> = {
 function Category() {
   const { categoryname } = useParams();
   const { data, loading, error } = useAxios<Product[]>(
-    `/Loukman-store/products/category/${categoryname}`
+    `https://fakestoreapi.com/products/category/${categoryname}`
   );
   const [localData, setLocalData] = useState<Product[] | null>(null);
   const [filter, setFilter] = useState([]);
